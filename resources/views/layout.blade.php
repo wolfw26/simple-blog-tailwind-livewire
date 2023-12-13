@@ -32,7 +32,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <img src="{{ asset('assets/icons-svg/account-circle.svg') }}" alt="" srcset="">
+                        <img class=" sm:mx-3" src="{{ asset('assets/icons-svg/account-circle.svg') }}" alt="" srcset="">
                     </div>
                     <div>
                         <div class="my-9 px-5 sm:max-w-sm sm:absolute sm:right-0">
