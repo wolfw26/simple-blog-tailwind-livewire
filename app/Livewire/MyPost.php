@@ -8,6 +8,8 @@ class MyPost extends Component
 {
     public function render()
     {
-        return view('livewire.my-post');
+        return view('livewire.my-post')
+            ->extends('layout')
+            ->section('konten');
     }
 }

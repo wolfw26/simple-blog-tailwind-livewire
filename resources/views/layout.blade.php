@@ -25,14 +25,15 @@
                                 <div id="closeNav" class=" cursor-pointer absolute top-1 -right-5 rounded-r-full bg-emerald-50 px-2 py-2 border-r border-slate-500 sm:hidden">X</div>
                                 <h3 class=" font-black text-xl text-center border-b-2 py-4 border-x-black font-merriweather sm:w-1/3 sm:border-none sm:py-0">My-Blog</h3>
                                 <ul class=" w-full font-oswald font-bold text-center sm:flex sm:justify-evenly  sm:w-1/4">
-                                    <li class="py-1 px-1 my-1 hover:bg-green-200 hover:rounded-md hover:shadow-lg"><a href="#">Home</a></li>
-                                    <li class="py-1 px-1 my-1 hover:bg-green-200 hover:rounded-md hover:shadow-lg sm:px-5"><a href="#">My Post</a></li>
+                                    <li class="py-1 px-1 my-1 hover:bg-green-200 hover:rounded-md hover:shadow-lg"><a href="{{ route('post') }}">Home</a></li>
+                                    <li class="py-1 px-1 my-1 hover:bg-green-200 hover:rounded-md hover:shadow-lg sm:px-5"><a href="{{ route('mypost') }}">My Post</a></li>
                                     <li class="py-1 px-1 my-1 hover:bg-green-200 hover:rounded-md hover:shadow-lg"><a href="#">Notification</a></li>
                                     <li class="py-1 px-1 my-1 hover:bg-green-200 hover:rounded-md hover:shadow-lg"><a href="#">Comment</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <img class=" sm:mx-3" src="{{ asset('assets/icons-svg/account-circle.svg') }}" alt="" srcset="">
+                        <a href="{{ route('login') }}"><img class=" sm:mx-3 cursor-pointer" src="{{ asset('assets/icons-svg/account-circle.svg') }}" alt="" srcset=""></a>
+
                     </div>
                     <div>
                         <div class="my-9 px-5 sm:max-w-sm sm:absolute sm:right-0">

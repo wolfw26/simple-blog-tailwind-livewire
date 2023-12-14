@@ -2,6 +2,7 @@
 
 use App\Livewire\Login;
 use App\Livewire\Logout;
+use App\Livewire\MyPost;
 use App\Livewire\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,5 +23,6 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', PostController::class)->name('post');
+Route::get('/mypost', MyPost::class)->name('mypost');
 Route::get('/login', Login::class)->name('login');
 Route::get('/logout', Logout::class)->name('logout');
