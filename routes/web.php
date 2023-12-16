@@ -22,7 +22,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('layout');
 // });
 
-Route::get('/', PostController::class)->name('post');
+Route::get('/', Login::class)->name('login');
+Route::get('/post', PostController::class)->name('post');
 Route::get('/mypost', MyPost::class)->name('mypost');
 Route::get('/login', Login::class)->name('login');
 Route::get('/logout', Logout::class)->name('logout');
