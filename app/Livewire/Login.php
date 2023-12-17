@@ -8,6 +8,8 @@ class Login extends Component
 {
     public function render()
     {
-        return view('livewire.login');
+        return view('livewire.login')
+            ->extends('authentikasi')
+            ->section('konten');
     }
 }
